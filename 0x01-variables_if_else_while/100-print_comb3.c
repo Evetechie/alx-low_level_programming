@@ -20,7 +20,7 @@ while (a <= '9')
 	{
 		putchar(a);
 		putchar(b);
-		if (a =='8' && b == '9')
+		if (a == '8' && b == '9')
 		{
 			putchar('\n');
 		}
@@ -30,7 +30,9 @@ while (a <= '9')
 			putchar(' ');
 		}
 		b++;
-	}a++;
+	
+	}
+	a++;
 }
 return (0);
 }
