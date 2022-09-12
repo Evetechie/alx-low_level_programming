@@ -2,11 +2,7 @@
 #include <stdlib.h>
 
 /**
- *
  * Description: print
- *
- *
- *
  */
 int main(void)
 {
@@ -29,7 +25,7 @@ while (a <= '9')
 			putchar(',');
 			putchar(' ');
 		}
-		b++;	
+		b++;
 	}
 	a++;
 }
