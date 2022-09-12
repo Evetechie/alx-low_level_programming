@@ -29,8 +29,7 @@ while (a <= '9')
 			putchar(',');
 			putchar(' ');
 		}
-		b++;
-	
+		b++;	
 	}
 	a++;
 }
