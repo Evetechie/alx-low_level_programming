@@ -10,29 +10,27 @@
  */
 int main(void)
 {
-	int n1 = 0, n2;
-	while (n1 <= 9)
+int a = '0';
+int b;
 
+while (a <= '9')
+{
+	b = a + 1;
+	while (b <= '9')
 	{
-		n2 = 0;
-		while (n2 <= 9)
-
+		putchar(a);
+		putchar(b);
+		if (a =='8' && b == '9')
 		{
-			if (n1 != n2 && n1 < n2)
+			putchar('\n');
+		}
+		else
 		{
-			putchar(n1 + 48);
-			putchar(n2 + 48);
-			if (n1 + n2 != 17)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
-		++n2;
-		}
-	}
-	++n1;
-
-	putchar('\n');
-	return (0);
+		b++;
+	}a++;
+}
+return (0);
 }
