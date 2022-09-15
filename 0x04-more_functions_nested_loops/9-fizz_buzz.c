@@ -7,16 +7,26 @@
 
 int main(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int num = 1;
+
+	while (num++ < 100)
 	{
-		if (i % 3 == 0)
+		if ((num % 3) == 0)
+		{
 			printf("Fizz\n");
-		else if (i % 5 == 0)
+		}
+		else if ((num % 5) == 0)
+		{
 			printf("Buzz\n");
-		else if ((i % 3 == 0) && (i % 5 == 0))
+		}
+		else if ((num % 3 == 0) && (num % 5 == 0))
+		{
 			printf("Fizzbuzz\n");
+		}
 		else
-			printf("%d\n", i);
+		{
+			printf("%d\n", num);
+		}
 	}
 	return (0);
 }
