@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
+ * print_triangle - prints a triangl
+ *
  * @size: size parameter of triangle
  * Return: return nothing
  */
@@ -32,5 +33,3 @@ void print_triangle(int size)
 		}
 	}
 }
-
-
