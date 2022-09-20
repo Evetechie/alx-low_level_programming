@@ -1,33 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * Description: print
+ * Main - print single digit numbers starting from 0
+ *
+ * Return: returns zero at the end
  */
+
 int main(void)
 {
-int a = '0';
-int b;
+	int i, j;
 
-while (a <= '9')
-{
-	b = a + 1;
-	while (b <= '9')
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(a);
-		putchar(b);
-		if (a == '8' && b == '9')
+		for (j = 1; j <= 9; j++)
 		{
-			putchar('\n');
+			if (j > i)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		b++;
 	}
-	a++;
-}
-return (0);
+	putchar('\n');
+
+	return (0);
 }
