@@ -3,11 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - print if the number is positive
+ * main - print random number to variable
  *
- * Description: using the main function
- * this program prints "Programming is positive,zero, or negative
- * Return: 0
+ * Return: always successful
  */
 int main(void)
 {
@@ -17,14 +15,14 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%s %d is %d and is", last, n, n % 10);
+	printf("%s%d is %d and is", last, n, n % 10);
 	if (n % 10 > 5)
 	{
 		printf("greater than 5\n");
 	}
 	else if (n % 10 == 0)
 	{
-	printf("0\n");
+		printf("0\n");
 	}
 	else
 	{
