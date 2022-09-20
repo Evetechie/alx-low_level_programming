@@ -1,42 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - loop through variables a, b, c printing digits
- * Return: print to stdout all possible different
- * combinations of three digits
+ * main - print possible combo of 3
+ *
+ * Return: returns zero at the end
  */
 int main(void)
 {
-	int a = '0';
-	int b;
-	int c;
+	int i, p, m;
 
-	while (a <= '7')
+	for (i = 0; i <= 9; i++)
 	{
-		b = a + 1;
-		while (b <= '8')
+		for (p = 1; p <= 9; p++)
 		{
-		c = b + 1;
-		while (c <= '9')
-		{
-			putchar(a);
-			putchar(b);
-			putchar(c);
-		if (a == '7' && b == '8' && c == '9')
-		{
-			putchar('\n');
+			for (m = 2; m <= 9; m++)
+			{
+			if (m > p && p > i)
+			{
+				putchar(i + '0');
+				putchar(p + '0');
+				putchar(m + '0');
+					if (i != 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			}
 		}
-			
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
-			c++;
-		}
-			b++;
-		}
-			c++;
 	}
+	putchar('\n');
 	return (0);
 }
