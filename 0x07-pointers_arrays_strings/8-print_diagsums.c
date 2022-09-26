@@ -9,17 +9,22 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, p, l = 0, r = 0;
+	int i, size1;
+	unsigned int sumDiag1, sumDiag2;
 
-	for (i = 0; i < size; i++)
+	size1 = 0;
+	sumDiag1 = 0;
+	sumDiag2 = 0;
+
+	size1 = (size * size - 1);
+
+	for (i = 0; i <= size; i = i + (size + 1))
 	{
-		p = (i * size); i++;
-		l += *(a + p);
+		sumDiag1 = sumDiag1 + a[i];
 	}
-	for (j = 0; j < size; j++)
+	for (i = (size - 1); i < size1; i = i + (size - 1))
 	{
-		p = (j * size) + (size - 1 - j);
-		r += *(a + p);
+		sumDiag2 = sumDiag2 + a[i];
 	}
-	printf("%i, %i\n", l, r);
+	printf("%d, %d\n", sumDiag1, sumDiag2);
 }
