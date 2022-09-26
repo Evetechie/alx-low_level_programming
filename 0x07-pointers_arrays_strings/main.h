@@ -1,7 +1,11 @@
+#ifndef MAIN_H
 #define MAIN_H
+#include <stddef.h>
+#include <stdio.h>
 /**
  * void prototypes()
  * int prototypes()
+ * char prototypes()
  */
 int _putchar(char);
 char *_memset(char *s, char b, unsigned int n;)
