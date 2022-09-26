@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void print_diagsums(int *a, int size);
+void print_diagsums(int *a, int size)
 {
 	int i, j, p, l = 0, r = 0;
 
