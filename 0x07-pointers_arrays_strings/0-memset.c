@@ -6,14 +6,12 @@
  * @n: length of buffer
  * Return: new string
  */
-char *_memeset(char *s, char b,  unsigned int n)
+char *_memset(char *s, char b,  unsigned int n);
 {
-	unsigned int i = 0;
-
-	while (i < n)
+	while (n)
 	{
-		*(s + 1) = b;
-		i++;
+		s[n - 1] = b;
+		n--;
 	}
 	return (s);
 }
