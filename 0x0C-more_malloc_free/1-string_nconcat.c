@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings
- * @s1: first string
- * @s2: second string
- * @n: the first n bytes of s2
+ * string_nconcat - concatenates two strings and returns length 
+ * @s1: first string to be copied
+ * @s2: second string to be copied
+ * @n: the first n bytes of s2 to copy
  *
- * Return : char pointer to newly allocated to newly allocated place in memory
+ * Return : string length
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
