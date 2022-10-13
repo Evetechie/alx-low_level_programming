@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (success)
  */
-int main(int argc, int argv)
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	char o;
@@ -19,7 +19,7 @@ int main(int argc, int argv)
 		exit(98);
 	}
 	arg1 = atoi(argv[1]);
-	arg2 = atoi(argc[3]);
+	arg2 = atoi(argv[3]);
 
 	func = get_op_func(argv[2]);
 
