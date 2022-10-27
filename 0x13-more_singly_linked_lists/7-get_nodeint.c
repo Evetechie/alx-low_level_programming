@@ -5,7 +5,7 @@
  * @head: pointer to the head of the linked list
  * @index: index of the node to find(starting at 0)
  *
- * Return: pointer to the desired node 
+ * Return: pointer to the desired node
  * or NULL - if the node does not exist
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
