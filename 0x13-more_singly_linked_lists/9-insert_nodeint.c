@@ -5,6 +5,7 @@
  * at a given position
  * @head: head of a list
  * @n: integer element
+ * @idx: position of a node
  *
  * Return: the address of the new node
  * or NULL if it failed
