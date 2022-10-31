@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * get_endianness - a prototype that checks the endianness
+ * get_endianness - a checks the endianness
+ * @endian: the order or sequence of bytes of a word in comp memory
  *
  * Returns: 0 if big endian,
  * 1 if little endian
